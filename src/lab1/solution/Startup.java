@@ -1,12 +1,13 @@
-package lab1;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab1.solution;
 
 /**
- * In this lab your challenge is to fix the code in both classes to use
- * proper encapsulation and the other best practices as explained by 
- * your instructor.
  *
- * @author      Jim Lombardo, WCTC Instructor
- * @version     1.01
+ * @author Kallie
  */
 public class Startup {
     public static void main(String[] args) {
@@ -19,17 +20,11 @@ public class Startup {
             may need to create a new class that talks to Employee. This does
             not have to be a GUI class.
         */
-        Employee employee = new Employee();
-        employee.firstName = "Peter";
-        employee.lastName = "Piper";
-        employee.ssn = "333-1234";
-        
-        employee.meetDepartmentStaff();
-        employee.meetWithHrForBenefitAndSalryInfo();
-        employee.reviewDeptPolicies();
-
+        Employee employee = new Employee("Peter", "Piper", "333-1234");
+        employee.newEmployeeProcess("cube 001");
         System.out.println("The employee's status is: " + employee.getStatus());
     }
     
     
 }
+
