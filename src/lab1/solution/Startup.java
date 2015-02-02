@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab1.solution;
 
 /**
@@ -21,7 +17,9 @@ public class Startup {
             not have to be a GUI class.
         */
         Employee employee = new Employee("Peter", "Piper", "333-1234");
-        employee.newEmployeeProcess("cube 001");
+        HRmanager HrManager = new HRmanager();
+        
+        HrManager.hireEmployee(employee);
         System.out.println("The employee's status is: " + employee.getStatus());
     }
     
